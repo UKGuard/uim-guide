@@ -2,7 +2,7 @@
 
 A step-by-step progression guide for **Old School RuneScape Ultimate Ironman**, written for players who want to get from the first tick to the max cape with the fewest trips, slots and risky deaths.
 
-**Read it online:** https://ukguard.github.io/uim-guide/
+**Read it online:** https://uimguide.github.io/uim-guide/
 
 ## Purpose
 
