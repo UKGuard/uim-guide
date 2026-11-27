@@ -28,10 +28,11 @@ Each chapter is split into blocks. Every block lists its steps and the wiki page
 ## Site features
 
 - **Tick off steps.** Progress is saved in this browser only.
-- **Continue where I left off**, and **Reset chapter** on each chapter page.
-- **Search** quests, items and levels. Press `/` to jump to the search box.
-- **Light and dark themes.**
-- **Contents sidebar** on every chapter page.
+- **Continue where I left off**, and **Reset chapter** (it asks before clearing) on each chapter page.
+- **Hide finished** steps and blocks from the contents sidebar, which also follows your place as you scroll.
+- **Export and import progress** as a small JSON file, to move it to another browser or device.
+- **Search** quests, items and levels. Press `/` to jump to the search box; arrow keys move through the results.
+- **Light and dark themes**, a layout that works at half-screen beside the game client, and keyboard and screen-reader support (skip link, visible focus, reduced motion).
 
 ## Accuracy and sources
 

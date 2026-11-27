@@ -14,7 +14,12 @@
 <meta property="og:title" content="Page not found · UIM Progression Guide">
 <meta property="og:description" content="A comfort-first Ultimate Ironman progression guide for Old School RuneScape, from Tutorial Island to the max cape, with no bank assumed and every step checked against the OSRS Wiki.">
 <meta property="og:url" content="https://uimguide.github.io/uim-guide/404.html">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://uimguide.github.io/uim-guide/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UIM Progression Guide: an Ultimate Ironman route for Old School RuneScape, from the first tick to the max cape.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://uimguide.github.io/uim-guide/og-image.png">
 <meta name="theme-color" content="#efe6d0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16120c" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -24,20 +29,41 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="home">
+<a class="skip" href="#main">Skip to content</a>
 <div class="topbar">
   
   <a class="brand" href="index.html">UIM Progression Guide</a>
-  <nav aria-label="Chapters"><a href="chapter-1.html"><span class="cn">Chapter 1</span><span class="ct">Tutorial Island to Desert Treasure</span></a><a href="chapter-2.html"><span class="cn">Chapter 2</span><span class="ct">Quest blocks to Song of the Elves</span></a><a href="chapter-3.html"><span class="cn">Chapter 3</span><span class="ct">Song of the Elves to quest cape</span></a><a href="chapter-4.html"><span class="cn">Chapter 4</span><span class="ct">Quest cape to max cape</span></a></nav>
   <div class="grow"></div>
   <div class="search" role="search"><label class="sr" for="q">Search the guide</label><input id="q" type="search" placeholder="Search quests, items, levels  ( / )" autocomplete="off"><div class="sresults" id="sresults" hidden></div></div>
   <button id="theme" type="button" aria-label="Switch theme"></button>
   
 </div>
-<main class="main"><section class="hero"><h1>That page isn't here</h1><p class="lede">The link may be from an older version of the guide.</p>
+<nav class="chapbar" aria-label="Chapters"><a href="chapter-1.html" title="Chapter 1: Tutorial Island to Desert Treasure"><span class="cn">Chapter 1</span><span class="ct">Tutorial Island to Desert Treasure</span></a><a href="chapter-2.html" title="Chapter 2: Quest blocks to Song of the Elves"><span class="cn">Chapter 2</span><span class="ct">Quest blocks to Song of the Elves</span></a><a href="chapter-3.html" title="Chapter 3: Song of the Elves to quest cape"><span class="cn">Chapter 3</span><span class="ct">Song of the Elves to quest cape</span></a><a href="chapter-4.html" title="Chapter 4: Quest cape to max cape"><span class="cn">Chapter 4</span><span class="ct">Quest cape to max cape</span></a></nav>
+<main class="main" id="main" tabindex="-1"><section class="hero"><h1>That page isn't here</h1><p class="lede">The link may be from an older version of the guide.</p>
 <div class="hero-actions"><a class="btn primary" href="index.html">Go to the start page</a><a class="btn" href="chapter-1.html">Chapter 1</a><a class="btn" href="chapter-2.html">Chapter 2</a><a class="btn" href="chapter-3.html">Chapter 3</a><a class="btn" href="chapter-4.html">Chapter 4</a></div></section><footer class="site-footer">
-  <p>Written by Marcos (UK Guard). The early route was first inspired by the BRUHsailer Ironman guide by So Iron BRUH and ParasailerOSRS; this guide is an independent rewrite for Ultimate Ironman.</p>
-  <p>A fan-made guide, not affiliated with or endorsed by Jagex. Old School RuneScape and RuneScape are trademarks of Jagex Ltd. Mechanics are checked against the <a href="https://oldschool.runescape.wiki/">Old School RuneScape Wiki</a>, and every block links the wiki pages it relies on.</p>
-  <p>Text licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license noopener">CC BY-NC-SA 3.0</a>. Last checked 23 November 2026. Progress is saved in this browser only.</p>
+  <div class="sf-grid">
+    <section class="sf-col" aria-labelledby="sf-about">
+      <h2 class="sf-h" id="sf-about">About this guide</h2>
+      <p>Written by Marcos (UK Guard).</p>
+      <p>The early route was first inspired by the BRUHsailer Ironman guide by So Iron BRUH and ParasailerOSRS; this guide is an independent rewrite for Ultimate Ironman.</p>
+    </section>
+    <section class="sf-col" aria-labelledby="sf-sources">
+      <h2 class="sf-h" id="sf-sources">Sources</h2>
+      <p>Mechanics are checked against the <a href="https://oldschool.runescape.wiki/">Old School RuneScape Wiki</a>, and every block links the wiki pages it relies on.</p>
+      <p class="sf-meta">Last checked 23 November 2026.</p>
+    </section>
+    <section class="sf-col" aria-labelledby="sf-progress">
+      <h2 class="sf-h" id="sf-progress">Your progress</h2>
+      <p>Progress is saved in this browser only.</p>
+      <div class="sf-actions"><button type="button" data-progress="export">Export progress</button><button type="button" data-progress="import">Import progress</button><input type="file" id="progress-file" accept=".json,application/json" hidden></div>
+      <p class="sf-status" id="progress-status" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+  <div class="sf-legal">
+    <p>A fan-made guide, not affiliated with or endorsed by Jagex. Old School RuneScape and RuneScape are trademarks of Jagex Ltd.</p>
+    <p>Text licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license noopener">CC BY-NC-SA 3.0</a>.</p>
+  </div>
 </footer></main>
 <script src="assets/site.js"></script>
+<script src="assets/ux.js"></script>
 </body></html>
