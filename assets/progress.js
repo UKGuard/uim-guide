@@ -89,11 +89,11 @@
   var rb=document.getElementById('reset'), armed=false;
   rb.addEventListener('click',function(){
     if(!armed){
-      armed=true; label(rb,'Click again to clear','Confirm');
-      setTimeout(function(){armed=false; label(rb,'Reset chapter','Reset');},4000);
+      var n=Array.from(done).filter(function(id){return id.indexOf(CH+'-')===0;}).length; if(!n){label(rb,'Nothing to reset','Reset'); setTimeout(function(){label(rb,'Reset chapter','Reset');},1800); return;} armed=true; rb.classList.add('armed'); label(rb,'Clear '+n+' ticks? Click again','Clear '+n+'?'); rb.title='Click again within 4 seconds to clear this chapter';
+      rb._t=setTimeout(function(){armed=false; rb.classList.remove('armed'); rb.title=''; label(rb,'Reset chapter','Reset');},4000);
       return;
     }
-    armed=false; label(rb,'Reset chapter','Reset');
+    clearTimeout(rb._t); armed=false; rb.classList.remove('armed'); rb.title=''; label(rb,'Reset chapter','Reset');
     Array.from(done).forEach(function(id){if(id.indexOf(CH+'-')===0){done.delete(id);}}); save();
     boxes.forEach(function(b){b.checked=false; markRow(b);});
     refresh(); updateResume();
